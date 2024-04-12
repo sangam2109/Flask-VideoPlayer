@@ -4,6 +4,7 @@ from flask import Flask, render_template, send_from_directory
 
 app = Flask(__name__)
 
+
 # # Detecting the videos folder relative to the script's location
 # if len(sys.argv) == 2:
 #     VIDS_PATH = sys.argv[1]
