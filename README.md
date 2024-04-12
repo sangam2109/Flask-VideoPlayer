@@ -1,4 +1,4 @@
-```markdown
+
 # Vyakhya Flask Video Player
 
 Welcome to Vyakhya Flask Video Player, a simple and elegant solution for embedding video playback functionality into your Flask web applications.
@@ -69,9 +69,9 @@ You can customize the appearance and behavior of the video player by modifying t
 
 ## Contributors
 
-- [Your Name](https://github.com/your_username)
+- [Sangam Arora](https://github.com/sangam2109)
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
+
