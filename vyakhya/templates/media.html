@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <!-- Include Plyr library -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.4/plyr.css">
+    <style>
+        /* Ensure video fills the container */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #player {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div style="max-width: 100vw; max-height: 70vh;"> -->
+        <video id="player" controls autoplay>
+            <source src="{{ url_for('index', vid_name=vid_name) }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    <!-- </div> -->
+
+    <!-- Include Plyr JavaScript -->
+    <script src="https://cdn.plyr.io/3.6.4/plyr.js"></script>
+    <script>
+        // Initialize Plyr for the video element with id 'player'
+        const player = new Plyr('#player', { fullscreen: { enabled: true } });
+    </script>
+</body>
+
+</html>
